@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Awesome Task List</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,
+	700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+				integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+				crossorigin="anonymous">
+</head>
+<body>
+<div class="container container_shadow">
+	<div class="block">
+		<div class="card card_content">
+				<span class="card__title">
+					Список задач
+				</span>
+			<div class="row">
+				<form id="taskForm" class="form">
+					<div class="form__input">
+						<input id="task" type="text" name="task" class="input__inLine">
+						<label for="task" class="label">
+							новая задача
+						</label>
+					</div>
+					<input type="submit" value="Добавить" class="btn btn_add">
+				</form>
+			</div>
+		</div>
+		<div class="card card__action">
+				<span class="card__title">
+					Задачи
+				</span>
+			<div class="row">
+				<div class="form__input">
+					<input id="filter" type="text" name="filter" class="input__inLine">
+					<label for="filter" class="label">фильтр задач</label>
+				</div>
+			</div>
+		</div>
+		<ul class="collection">
+		</ul>
+		<button type="reset" class="btn btn_clear">Очистить все</button>
+	</div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
